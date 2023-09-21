@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MyPersonalWebsite.Models.Classes;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -9,9 +10,11 @@ namespace MyPersonalWebsite.Controllers
     public class HomePageController : Controller
     {
         // GET: HomePage
+        Context c = new Context();
         public ActionResult Index()
         {
-            return View();
+            var value = c.HomePages.ToList();
+            return View(value);
         }
     }
 }
