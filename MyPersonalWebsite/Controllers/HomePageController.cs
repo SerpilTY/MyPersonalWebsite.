@@ -16,5 +16,10 @@ namespace MyPersonalWebsite.Controllers
             var value = c.HomePages.ToList();
             return View(value);
         }
+        public PartialViewResult Icons()
+        {
+            var value = c.GetIcons.ToList();
+            return PartialView(value);
+        }
     }
 }
