@@ -38,5 +38,14 @@ namespace MyPersonalWebsite.Controllers
             var value = c.GetIcons.ToList();
             return View(value);
         }
+        [HttpGet] public ActionResult NewIcon() {
+        return View();
+        }
+        [HttpPost] public ActionResult NewIcon(Icons i)
+        {
+            c.GetIcons.Add(i);
+            c.SaveChanges();
+            return RedirectToAction("IconsList");
+        }
     }
 }
