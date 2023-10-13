@@ -33,5 +33,10 @@ namespace MyPersonalWebsite.Controllers
             return RedirectToAction("Index"); 
         
         }
+        public ActionResult IconsList()
+        {
+            var value = c.GetIcons.ToList();
+            return View(value);
+        }
     }
 }

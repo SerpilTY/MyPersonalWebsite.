@@ -14,7 +14,7 @@ body{
 .container{
     width:400px;
     background: #e8ecee;
-    height: 580px;
+    height: 480px;
     padding:80px 40px;
     border-radius: 10px;
     position: absolute;
@@ -31,11 +31,11 @@ body{
     font-size:15px;
     color:#333;
     border:none;
-    width: 100%;
+    width: 80%;
     outline: none;
     background: none;
     padding:0 5px;
-    height: 40px;
+    height: 30px;
 }
 
 img.admin-image{
