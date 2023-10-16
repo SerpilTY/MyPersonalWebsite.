@@ -63,5 +63,12 @@ namespace MyPersonalWebsite.Controllers
             return RedirectToAction("IconsList");
 
         }
+        public ActionResult DeleteIcon(int id)
+        {
+            var icon = c.GetIcons.Find(id);
+            c.GetIcons.Remove(icon);
+            c.SaveChanges();
+            return RedirectToAction("IconsList");
+        }
     }
 }
