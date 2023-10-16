@@ -47,5 +47,21 @@ namespace MyPersonalWebsite.Controllers
             c.SaveChanges();
             return RedirectToAction("IconsList");
         }
+
+        public ActionResult IconDetails(int id)
+        {
+            var icondetails = c.GetIcons.Find(id);
+            return View("IconDetails", icondetails);
+        }
+
+        public ActionResult UpdateIcons(Icons x)
+        {
+            var iconsdetails = c.GetIcons.Find(x.Id);
+            iconsdetails.IconName = x.IconName;
+            iconsdetails.Link = x.Link;
+            c.SaveChanges();
+            return RedirectToAction("IconsList");
+
+        }
     }
 }

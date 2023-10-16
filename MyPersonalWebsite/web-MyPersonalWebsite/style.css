@@ -2,17 +2,17 @@
     margin: 0;
     padding: 0;
 }
-body{
-    color:white;
+body {
+    color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-image: url(greeny.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom;
-    min-height: 100vh ;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
-    align-items:center;
+    align-items: center;
 }
 .center .avatar img {
     border-radius: 50%;
@@ -22,43 +22,36 @@ body{
 
 }
 .center{
-    width:500px;
-    background-color:rgb(239, 211, 242);;
-    height: 600px;
+    width:300px;
+    background-color:rgb(239, 211, 242);
+    height: 400px;
     text-align: center;
     border-radius: 10px;
 }
-.content{
-    padding: 20px;
-}
-h1{
-    color:rgb(109, 91, 57);
-    
-}
-.content h2, p{
-    font-weight: lighter;
+.content h2, p{    
     letter-spacing: 0,2px;
     color:rgb(99, 89, 70);
     width:90%;
-    margin:10px auto;
+   /*margin:5px auto;*/
 
 }
 .content h2 {
     color:rgb(109, 91, 57);
+    font-weight:bold;
+}
+.content p {
+    font-weight: lighter;
 }
 .content h4{
-    margin-top: 20px;
+    margin-top: 5px;
     color:rgb(109, 91, 57);
-    margin-bottom: 20px;
-    font-weight:250px; ;
-    
+    margin-bottom: 20px;    
 }
 
-div.social i{
-    padding:0 10px;
-    font-size: 30px;
+div.social i {
+    font-size: 10px;
     color: rgb(109, 91, 57, 0.6);
-    transition:0.4s;
+    transition: 0.4s;
 }
 
 div.social i:hover{
@@ -77,7 +70,7 @@ div.social i:hover{
         font-size:14px;;
     }
     p{
-        width:90%;
+        width:70%;
         font-size: 11px;
     }
     h4{

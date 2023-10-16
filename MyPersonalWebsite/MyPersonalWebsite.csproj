@@ -205,6 +205,7 @@
     <Content Include="Views\Admin\HomePageDetails.cshtml" />
     <Content Include="Views\Admin\IconsList.cshtml" />
     <Content Include="Views\Admin\NewIcon.cshtml" />
+    <Content Include="Views\Admin\IconDetails.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
