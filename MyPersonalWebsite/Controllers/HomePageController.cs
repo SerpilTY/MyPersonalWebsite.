@@ -17,6 +17,7 @@ namespace MyPersonalWebsite.Controllers
         {
             var value = c.GetIcons.ToList();
             return PartialView(value);
+          
         }
     }
 }
