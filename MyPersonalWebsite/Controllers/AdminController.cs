@@ -11,6 +11,7 @@ namespace MyPersonalWebsite.Controllers
     {
         // GET: Admin
         Context c = new Context();
+        [Authorize]
         public ActionResult Index()
         {
             var value = c.HomePages.ToList();
@@ -70,5 +71,6 @@ namespace MyPersonalWebsite.Controllers
             c.SaveChanges();
             return RedirectToAction("IconsList");
         }
+        
     }
 }

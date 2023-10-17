@@ -28,5 +28,11 @@ namespace MyPersonalWebsite.Controllers
                 return RedirectToAction("Index","Admin");
             }else { return View(); }
         }
+
+        public ActionResult LogOut()
+        {
+            FormsAuthentication.SignOut();
+            return RedirectToAction("Index", "Login");
+        }
     }
 }
